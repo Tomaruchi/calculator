@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.0.1/math.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS for styling -->
+</head>
+<body>
+    <!-- Main calculator container -->
+    <div class="calculator"> 
+        <!-- Display for calculator output -->
+        <input type="text" placeholder="0" id="display"> 
+        <!-- Container for calculator buttons -->
+        <div class="buttons"> 
+            <button onclick="clearDisplay()">C</button> 
+            <button onclick="deleteLastCharacter()">DEL</button> 
+            <button onclick="Display('/')" onkeydown=" Myfun(event)">/</button> 
+            <button onclick="Display('*')" onkeydown=" Myfun(event)">*</button> 
+            <button onclick="Display('7')" onkeydown=" Myfun(event)">7</button> 
+            <button onclick="Display('8')" onkeydown=" Myfun(event)">8</button> 
+            <button onclick="Display('9')" onkeydown=" Myfun(event)">9</button> 
+            <button onclick="Display('-')" onkeydown=" Myfun(event)">-</button> 
+            <button onclick="Display('4')" onkeydown=" Myfun(event)">4</button> 
+            <button onclick="Display('5')" onkeydown=" Myfun(event)">5</button> 
+            <button onclick="Display('6')" onkeydown=" Myfun(event)">6</button> 
+            <button onclick="Display('+')" onkeydown=" Myfun(event)">+</button> 
+            <button onclick="Display('1')" onkeydown=" Myfun(event)">1</button> 
+            <button onclick="Display('2')" onkeydown=" Myfun(event)">2</button> 
+            <button onclick="Display('3')" onkeydown=" Myfun(event)">3</button> 
+            <button onclick="Display('%')" onkeydown=" Myfun(event)">%</button> 
+            <button onclick="Display('0')" onkeydown=" Myfun(event)">0</button> 
+            <button onclick="Display('00')" onkeydown=" Myfun(event)">00</button> 
+            <button onclick="Display('.')" onkeydown=" Myfun(event)">.</button> 
+            <button onclick="slove()">=</button> 
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript for functionality -->
+    <script src="script.js"></script> 
+</body>
+</html>

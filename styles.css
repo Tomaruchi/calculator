@@ -1,0 +1,83 @@
+body {
+    /* Center the content both vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light gray background */
+    font-family: Arial, sans-serif; /* Font style */
+    background-image: url(IMG/back\ img.webp); /* Background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Cover the entire background */
+}
+
+.calculator {
+    /* Style for the calculator container */
+    background: transparent; /* Transparent background */
+    padding: 20px; /* Padding around the calculator */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 50px rgba(171, 176, 180, 0.71); /* Shadow effect */
+    border: 1.5px solid white;
+}
+
+input {
+    /* Style for input fields */
+    color: white; /* Text color */
+    background-color: rgba(66, 73, 80, 0.71); /* Semi-transparent background */
+}
+
+#display {
+    /* Style for the display area of the calculator */
+    width: 100%; /* Full width */
+    height: 40px; /* Fixed height */
+    font-size: 24px; /* Font size */
+    text-align: right; /* Right-aligned text */
+    margin-bottom: 10px; /* Space below the display */
+    margin-left: -5px; /* Adjust left margin */
+    padding: 5px; /* Padding inside the display */
+    border: 1.5px solid white; /* Border around the display */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.buttons {
+    /* Style for the button grid */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    /* Style for buttons */
+    padding: 20px; /* Padding inside buttons */
+    font-size: 18px; /* Font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    border: 1.5px solid white; /* Border around buttons */
+    background-color: rgba(66, 73, 80, 0.71); /* Semi-transparent background */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Hover effects for specific buttons */
+.buttons button:nth-child(20):hover {
+    background-color: green; /* Change to green on hover */
+}
+.buttons button:nth-child(1):hover {
+    background-color: rgb(185, 22, 22); /* Change to dark red on hover */
+}
+.buttons button:nth-child(2):hover {
+    background-color: white; /* Change to white on hover */
+    color: black; /* Change text color to black */
+}
+.buttons button:nth-child(3):hover,
+.buttons button:nth-child(4):hover,
+.buttons button:nth-child(8):hover,
+.buttons button:nth-child(12):hover,
+.buttons button:nth-child(16):hover {
+    background-color: rgb(225, 150, 11); /* Change to orange on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Change to blue on hover */
+}
